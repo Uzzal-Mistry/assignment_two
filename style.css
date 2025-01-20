@@ -40,6 +40,15 @@
     color: rgb(93, 88, 239);
 }
 
+.color-5 {
+    color: black;
+}
+
+:root {
+    --width: 1200px;
+}
+
+
 .btn {
     font: size 1.25rem;
     ;
@@ -58,7 +67,7 @@
     justify-content: space-between;
     margin: 0 auto;
     width: 100%;
-    max-width: 1200px;
+    max-width: var(--width);
     margin-top: 32px;
 
 }
@@ -105,8 +114,34 @@
 
 }
 
-/* banner section style  */
 
+/* banner section style  */
+.banner {
+
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: var(--width);
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.banner-title {
+    font-size: 3.5rem;
+}
+
+.banner-description {
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 24px 0px;
+}
+
+.banner-btn {
+    background-color: black;
+    border: none;
+    font-size: 1rem;
+
+}
 
 /* responsive for small devise  */
 @media screen and (max-width: 576px) {
@@ -116,7 +151,7 @@
 
     .nav-container {
         margin-top: 19px;
-        
+
         width: calc(100% - 29px);
     }
 
@@ -127,7 +162,38 @@
 
     .hambars {
         display: block;
-       
+
+    }
+
+    /* banner */
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px 20px;
+
+    }
+
+    .banner-title {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .banner-img {
+        width: calc(100% - 20px);
+
+
+    }
+
+    .banner-right {
+        display: flex;
+        justify-content: center;
     }
 
 }
@@ -137,20 +203,42 @@
     .margin {
         margin: 0 0rem;
     }
+
     .nav-items,
     .nav-btn {
         display: none;
     }
+
     .hambars {
         display: block;
-       
+
     }
+
     .nav-container {
         margin-top: 39px;
-        
+
         width: calc(100% - 39px);
     }
-    
-    
-}
 
+    /* banner */
+    .banner {
+        flex-direction: column-reverse;
+    }
+
+    .banner-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0px 20px;
+
+    }
+    .banner-title {
+
+        margin-top: 20px;
+    }
+
+
+
+}
