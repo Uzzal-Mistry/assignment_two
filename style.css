@@ -1,3 +1,9 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
 .raleway {
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
@@ -8,6 +14,143 @@
 .quicksand {
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
+    font-weight: 700;
 
     font-style: normal;
 }
+
+/* common style  */
+.display-flex {
+    display: flex;
+}
+
+.orange {
+    color: orange;
+}
+
+.sky_blue {
+    color: rgb(1, 172, 253);
+}
+
+.color-3 {
+    color: rgb(5, 212, 223);
+}
+
+.color-4 {
+    color: rgb(93, 88, 239);
+}
+
+.btn {
+    font: size 1.25rem;
+    ;
+    font-weight: 600;
+    width: 197px;
+    height: 50px;
+    color: white;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-container {
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 32px;
+
+}
+
+.brand {
+    align-items: center;
+}
+
+.brand-title {
+    font-size: 2rem;
+    margin-left: 10px;
+}
+
+.nav-items {
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+
+.nav-items>li {
+    list-style: none;
+    margin: 0rem 32px;
+
+}
+
+.nav-items>li>a {
+    text-decoration: none;
+}
+
+.first-nav-list {
+
+
+    font-weight: 700;
+}
+
+
+.nav-btn {
+    background-color: orange;
+
+}
+
+.hambars {
+    display: none;
+
+}
+
+/* banner section style  */
+
+
+/* responsive for small devise  */
+@media screen and (max-width: 576px) {
+    .margin {
+        margin: 0 0rem;
+    }
+
+    .nav-container {
+        margin-top: 19px;
+        
+        width: calc(100% - 29px);
+    }
+
+    .nav-items,
+    .nav-btn {
+        display: none;
+    }
+
+    .hambars {
+        display: block;
+       
+    }
+
+}
+
+/* responsive for medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .margin {
+        margin: 0 0rem;
+    }
+    .nav-items,
+    .nav-btn {
+        display: none;
+    }
+    .hambars {
+        display: block;
+       
+    }
+    .nav-container {
+        margin-top: 39px;
+        
+        width: calc(100% - 39px);
+    }
+    
+    
+}
+
