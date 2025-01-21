@@ -7,7 +7,6 @@
 .raleway {
     font-family: "Raleway", serif;
     font-optical-sizing: auto;
-
     font-style: normal;
 }
 
@@ -143,6 +142,114 @@
 
 }
 
+
+
+/* Curriculum */
+
+
+.curriculum {
+    background-image: url(assets/bg.png);
+    height: auto;
+    margin-bottom: 50px;
+    
+}
+.card-container {
+    
+    max-width: var(--width);
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+    
+}
+
+.c-title {
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 60px 0px 80px;
+}
+
+.card {
+    padding: 50px 0px 55px;
+    width: 365px;
+    text-align: center;
+    border-radius: 18px;
+    box-sizing: border-box;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+   
+
+}
+.kinder {
+    border: 0.94px solid rgb(222, 245, 255);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);  
+}
+.elementary{
+    border: 0.94px solid rgb(255, 244, 220);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+.middle{
+
+  
+    border: 0.94px solid rgb(242, 232, 255);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+.card-title {
+    font-size: 1.5rem;
+    margin: 32px 0px;
+
+}
+
+.card-desciption {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(128, 128, 128);
+    line-height: 1.7rem;
+    margin-bottom: 35px;
+}
+
+
+.card-btn1 {
+    font-size: 0.9rem;
+    color: rgb(100, 200, 255);
+}
+.card-btn2 {
+    font-size: 0.9rem;
+    color: rgb(240, 170, 0);
+}
+.card-btn3 {
+    font-size: 0.9rem;
+    color: rgb(135, 0, 255);
+}
+
+
+/* arrow-btn style  */
+
+.arrow-btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 80px;
+}
+.arrow-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgb(254, 163, 1);
+    color: white;
+}
+
+
+
 /* responsive for small devise  */
 @media screen and (max-width: 576px) {
     .margin {
@@ -196,7 +303,38 @@
         justify-content: center;
     }
 
+
+
+    /* card  */
+    .card-container {  
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+        
+    }
+
+    /* arrow-btn-container */
+
+    .arrow-btn-container{
+        display: none;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive for medium device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -234,10 +372,32 @@
         margin: 0px 20px;
 
     }
+
     .banner-title {
 
         margin-top: 20px;
     }
+
+
+    /* card  */
+    .card-container {
+    
+       
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+            
+        }
+
+
+        /* arrow-btn-container */
+
+        .arrow-btn-container{
+            display: none;
+        }
+
+
+    
 
 
 
