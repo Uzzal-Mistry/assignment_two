@@ -43,8 +43,10 @@
     color: black;
 }
 
+
 :root {
     --width: 1200px;
+
 }
 
 
@@ -151,18 +153,19 @@
     background-image: url(assets/bg.png);
     height: auto;
     margin-bottom: 50px;
-    
+
 }
+
 .card-container {
-    
+
     max-width: var(--width);
     width: 100%;
     justify-content: space-between;
     margin: 0 auto;
-    
+
 }
 
-.c-title {
+.title {
     font-size: 2.8rem;
     text-align: center;
     margin: 60px 0px 80px;
@@ -175,20 +178,23 @@
     border-radius: 18px;
     box-sizing: border-box;
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-   
+
 
 }
+
 .kinder {
     border: 0.94px solid rgb(222, 245, 255);
-    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);  
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
-.elementary{
+
+.elementary {
     border: 0.94px solid rgb(255, 244, 220);
     background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
-.middle{
 
-  
+.middle {
+
+
     border: 0.94px solid rgb(242, 232, 255);
     background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
@@ -221,10 +227,12 @@
     font-size: 0.9rem;
     color: rgb(100, 200, 255);
 }
+
 .card-btn2 {
     font-size: 0.9rem;
     color: rgb(240, 170, 0);
 }
+
 .card-btn3 {
     font-size: 0.9rem;
     color: rgb(135, 0, 255);
@@ -233,13 +241,14 @@
 
 /* arrow-btn style  */
 
-.arrow-btn-container{
+.arrow-btn-container {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 80px;
 }
-.arrow-btn{
+
+.arrow-btn {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -247,6 +256,106 @@
     background-color: rgb(254, 163, 1);
     color: white;
 }
+
+
+
+/* stories  */
+.stories {
+    padding-bottom: 60px;
+    background-image: url(assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3)100%);
+
+}
+
+.stories-card-container {
+    max-width: var(--width);
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.card-subtitle-l {
+    font-size: 1.5rem;
+    line-height: 38px;
+    margin-top: 23px;
+    padding-bottom: 30px;
+}
+
+.stories-description {
+    padding-bottom: 35px;
+}
+
+.stories-card-l {
+    background-color: white;
+    border-radius: 16px;
+
+}
+
+
+
+/* stories-right  */
+.stories-card {
+    background-color: white;
+    border-radius: 16px;
+    width: 291px;
+}
+
+.stories-card-container-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 17px;
+}
+
+.stories-img {
+    border-radius: 16px 16px 0 0;
+    margin-bottom: -25px;
+
+}
+
+.card-details {
+    margin: 0px 37px;
+}
+
+.stories-btn {
+    padding: 10px 18px;
+    border: none;
+
+    border-radius: 47px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.stories-btn1 {
+    background-color: rgb(149, 178, 38);
+
+}
+
+.stories-btn2 {
+    background-color: rgb(93, 88, 240);
+
+}
+
+.card-subtitle {
+
+    line-height: 28.76px;
+    margin-top: 23px;
+    padding-bottom: 30px;
+    color: rgb(0, 0, 0);
+
+}
+
+.stories-btn-view {
+    margin: 0 auto;
+    margin-top: 85px;
+
+}
+
+
+
+
+
+
 
 
 
@@ -306,17 +415,68 @@
 
 
     /* card  */
-    .card-container {  
-    flex-direction: column;
-    gap: 25px;
-    align-items: center;
-        
+    .card-container {
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+
     }
 
     /* arrow-btn-container */
 
-    .arrow-btn-container{
+    .arrow-btn-container {
         display: none;
+    }
+
+    /* stories */
+    .stories-card-l {
+        display: none;
+    }
+
+    .stories-card {
+        background-color: white;
+        border-radius: 16px;
+        width: 170px;
+    }
+
+    .stories-card-container-right {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .stories-img {
+        border-radius: 16px 16px 0 0;
+        margin-bottom: -20px;
+        width: 100%;
+
+    }
+
+    .card-details {
+        margin: 0px 20px;
+    }
+
+    .card-subtitle {
+        font-size: 9.13px;
+        font-weight: 700;
+        line-height: 17.12px;
+        margin-top: 10px;
+        padding-bottom: 18px;
+
+    }
+
+    .stories-btn {
+        padding: 10px 18px;
+        border: none;
+        border-radius: 47px;
+        color: white;
+        font-size: 0.5rem;
+        font-weight: 500;
+    }
+    .stories-btn-view {
+        margin: 0 auto;
+        margin-top: 30px;
+    
     }
 
 }
@@ -381,23 +541,36 @@
 
     /* card  */
     .card-container {
-    
-       
+
+
         flex-direction: column;
         gap: 25px;
         align-items: center;
-            
-        }
+
+    }
 
 
-        /* arrow-btn-container */
+    /* arrow-btn-container */
 
-        .arrow-btn-container{
-            display: none;
-        }
+    .arrow-btn-container {
+        display: none;
+    }
+
+    /* stories */
+    .stories-card-l {
+        display: none;
+    }
+
+    .stories-card-container-right {
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 27px;
+    }
 
 
-    
+
+
+
 
 
 
